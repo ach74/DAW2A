@@ -1,0 +1,216 @@
+* {
+	font-size:13px;
+	font-family: "Open Sans";
+	box-sizing: border-box;
+}
+
+body {
+	max-width:1000px;
+	display:flex; 
+
+	/***** ADD YOUR CODE HERE *****/
+	display: flex;
+	flex-wrap: wrap;
+	/***** END OF YOUR CODE *****/
+
+}
+
+/********** HEADER **********/
+header {
+	background-image: url(images2/logo.png);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+
+	height:140px;
+	width:100%;
+}	
+
+header div.icones {
+	float:right;
+	display:inline-block; 
+	height:20px;
+	margin-top:25px;
+	margin-right:10px;
+}
+
+header div#pop-up-menu {
+	display:none;
+}
+
+/********* TOPNAV MENU *********/
+nav {
+	overflow: hidden;
+	background-color: #333;
+	
+	width:20%;
+	height:auto;
+}
+
+nav ul {
+	padding-inline-start: 5px;
+	padding-right:10px;
+}
+
+nav ul li {
+	display:block;
+	width:100%;
+}
+
+nav a {
+	display: block;
+	color: #f2f2f2;
+	padding: 0;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+nav a {
+	text-decoration: none;
+	text-transform: uppercase; 
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+
+/********* MAIN CONTENTS *********/
+main {
+	width:100%;
+	display:flex;
+	/***** ADD YOUR CODE HERE *****/
+
+	/***** END OF YOUR CODE *****/
+}
+
+
+/********** left **********/
+#left {
+	width:50%;
+
+	display:flex;
+	/***** ADD YOUR CODE HERE *****/
+	flex-direction: column;
+	/***** END OF YOUR CODE *****/
+}	
+
+#left div {
+	width:100%;
+	padding:2px;
+}
+
+#left div p {
+	font-family: "Times New Roman";
+	font-size:1.2em;
+}
+
+#left div h3 {
+	color: #828f80;
+	font-weight: bold;
+}
+
+
+#left div img {
+	width:100%;
+}
+
+/********** aside **********/
+aside {
+	width:25%;
+	display:flex;
+	/***** ADD YOUR CODE HERE *****/
+	flex-direction: column;
+	/***** END OF YOUR CODE *****/
+
+}
+
+aside div {
+	padding:10px;
+}
+
+aside#right {
+	width:30%;
+}	
+
+aside#right div {
+	border-bottom:1px solid black;
+}
+
+
+/******** FOOTER *********/
+
+footer {
+	width:100%;
+	float:left;
+}
+
+footer {
+	height:100px;
+	background-color:grey;
+}
+
+
+
+
+/********* MOBILE DEVICE **********/
+
+@media screen and (max-width: 650px) {
+
+	* {
+		font-size:11px;
+	}
+	main {
+		/***** ADD YOUR CODE HERE *****/
+		display: flex;
+		flex-direction: column;
+		margin: 0 0 50px 0;
+		/***** END OF YOUR CODE *****/
+	}
+
+	nav {
+		/***** ADD YOUR CODE HERE *****/
+		width: 100%;
+		/***** END OF YOUR CODE *****/
+	}
+
+	nav a {
+		/***** ADD YOUR CODE HERE *****/
+		text-align: center;
+		font-size: 20px;
+		/***** END OF YOUR CODE *****/
+	}
+
+	.banner-container {
+		display:none;
+	}
+
+	header div#pop-up-menu {
+		width:100%;
+
+		display:inline-block;
+		margin-left:50%;
+		margin-top:15px;
+		margin-right:5px;
+	}
+
+	header div.icones {
+		margin-top:70px;
+		margin-right:3px;
+	}
+
+	#left { 
+		width:100%; 	
+	}	
+
+	aside#right {
+		width:100%;
+	}
+
+	#left div {
+		width:100%;
+		padding:4px;
+		box-sizing: border-box;
+	}
+
+	#left div img { 		 
+		width:100%;
+	}		
+}

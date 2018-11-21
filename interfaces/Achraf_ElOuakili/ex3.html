@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+	<title>A2.7 - Exercise 3</title>
+<style>
+
+	body {
+		margin: 5px;
+	}
+
+	.box {
+		background-color: #444;
+		color: #fff;
+		border-radius: 2px;
+		padding: 20px;
+		font-size: 150%; 
+	}
+
+	.header, .footer {
+		background-color: #999;
+	}
+
+	.sidebar2 {
+		background-color: #ccc;
+		color: #444;
+	}	
+
+	.wrapper {
+		background-color: #fff;
+		color: #444;
+		display: grid;
+		grid-gap: 5px;
+		grid-template-columns: 200px auto;
+		grid-template-rows: 1fr 2fr 2fr auto;
+		grid-template-areas: 
+		"header header"
+		"sidebar content1"
+		"sidebar content2"
+		"footer footer"
+
+	}	
+	
+	.sidebar{ 
+		grid-area: sidebar;
+	}
+	.content1{ 
+		grid-area: content1;
+		position: relative;
+	}
+
+	.content1 > img {
+		width: 200px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 5px;
+	}
+	.content2{ 
+		grid-area: content2;
+		position: relative;
+	}
+	.content2 > img {
+		width: 200px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		margin: 5px;
+	}
+	.header{ 
+		grid-area: header;
+		padding: 5px 0 0 5px;
+	}
+	.header > img{ 
+		width: 200px;
+	}
+
+	.footer{
+		grid-area: footer;
+	}
+
+
+	@media only screen and (max-width: 501px) {
+		.wrapper {
+			background-color: #fff;
+			color: #444;
+			display: grid;
+			grid-gap: 5px;
+			grid-template-columns: auto;
+			grid-template-rows: auto auto 200px 200px auto;
+			grid-template-areas: 
+			"header"
+			"sidebar"
+			"content1"
+			"content2"
+			"footer"
+		}	
+	}
+
+</style>
+</head>
+
+<body>
+	
+	<div class="wrapper">
+		<div class="box header">
+			<img src="logo-bn.png">
+		</div>
+		<div class="box sidebar">Sidebar</div>
+		<div class="box content1">Content 1
+			<img src="event-2.jpg">
+		</div>
+		<div class="box content2">Content 2
+			<img src="event-3.png">
+		</div>
+		<div class="box footer">Footer</div>
+	</div>
+
+</body>
+</html>

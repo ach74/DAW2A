@@ -1,0 +1,171 @@
+body{
+	background: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+	width: 960px;
+	height: auto;
+	margin: auto;
+}
+
+#head{
+	width: 100%;
+	height: 260px;
+	text-align: center;
+}
+
+
+#head ul li a {
+	color: #252525;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 0 0 3px;
+	text-transform: uppercase;
+}
+
+#head #menu li a:hover {
+	color: #0ba39c;
+}
+#imgHead{
+	margin-top: 30px;
+}
+#menu{
+	list-style-type: none;
+	margin-left: 185px;
+	padding: auto;
+}
+
+li {
+	float: left;
+	width:100px;
+
+}
+
+li a {
+	display: block;
+	text-align: center;
+	padding-top: 14px;
+	text-decoration: none;
+}
+
+#container01{
+	height: 400px;
+	width: auto;
+}
+
+
+#imgC01{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+#textC01{
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	width: auto;
+}
+
+#textC01 h2{
+	background: #fff;
+	color: #000;
+	font-family: poller_oneregular;
+	font-size: 20px;
+	font-weight: normal;
+	text-transform: uppercase;
+
+
+	display: inline-block;
+	font-size: 20px;
+	margin: 7px 0;
+	padding: 23px 32px 20px;
+}
+.s01{
+	background: #252525;
+	color: #fff;
+	display: inline-block;
+	font-size: 20px;
+	margin: 7px 0;
+	padding: 12px 27px;
+}
+
+#link01:hover{
+	background: lightblue;
+}
+#link01{
+	background: #0ba39c;
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	margin: 15px 0 0;
+	padding: 26px 27px 22px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#galleri{
+	width: auto;
+	height: 340px;
+	margin: 0 auto;
+	padding: 24px 0 0;
+	width: auto;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.imgGaleria:hover{
+	opacity: 1;
+}
+.imgGaleria{
+	float: left;
+	margin-left: 20px;
+	opacity: .8;
+	transition: 0.5s ease-in-out;
+}
+.imgGaleria a img{
+	border: 2px solid black;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+}
+.imgGaleria a{
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.imgGaleria a h2{
+	color: black;
+	font-family: poller_oneregular;
+	font-size: 20px;
+	font-weight: normal;
+
+}
+
+#footer{
+	width: 100%;
+	height: 122px;
+	background-color: #252525;
+}
+
+#footer p {
+	color: #fff;
+	float: left;
+	margin-top: 50px;
+}
+
+#redes {
+	list-style-type: none;
+	float: right;
+	margin-top: 34px;
+}
+
+#redes li {
+	width: 44px;
+	border: 2px solid white;
+	margin-right: 20px;
+}

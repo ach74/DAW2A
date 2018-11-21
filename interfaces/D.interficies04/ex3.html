@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+	<title>Exercise 3 - CSS Grid</title>
+<style>
+
+body {
+  margin: 5px;
+}
+
+.wrapper {
+  background-color: #fff;
+  color: #444;
+/***** ADD YOUR CODE HERE *****/
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 10px;
+/******************************/
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+	
+.a {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 2;
+}
+
+/***** ADD YOUR CODE HERE *****/
+	
+	
+	.g{
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+	
+	
+	
+	
+/******************************/
+</style>
+</head>
+
+<body>
+	
+	
+<div class="wrapper">
+  <div class="box a">A</div>
+  <div class="box b">B</div>
+  <div class="box c">C</div>
+  <div class="box d">D</div>
+  <div class="box e">E</div>
+  <div class="box f">F</div>
+  <div class="box g">G</div>
+  <div class="box h">H</div>
+</div>
+	
+</body>
+</html>

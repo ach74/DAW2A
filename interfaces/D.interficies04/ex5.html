@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+	<title>Exercise 3 - CSS Grid</title>
+<style>
+
+body {
+  margin: 5px;
+}
+
+.wrapper {
+  background-color: #fff;
+  color: #444;
+/***** ADD YOUR CODE HERE *****/
+	display: grid;
+	grid-template-columns: [col1-start] 1fr  [col2-start] 1fr  [col3-start] 1fr [col3-end];
+	grid-template-rows: [row1-start] 1fr [row2-start] 1fr [row3-start] 1fr [row4-start] 1fr [row5-start] 1fr [row5-end];
+/******************************/
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  padding: 20px;
+  font-size: 150%;
+}
+/***** ADD YOUR CODE HERE *****/
+	.a{
+		grid-column: col1-start/col3-end;
+		background-color: blue;
+	}
+	.b{
+		display: none;
+	}
+	.c{
+		grid-column: col2-start/col3-start;
+	}
+	.d{
+		background-color: green;
+		grid-column: col3-start/col3-end;
+		grid-row: row2-start/row4-start;
+	}
+	.e{
+		grid-column: col1-start/col2-start;
+		grid-row: row2-start/row4-start;
+	}
+	.f{
+		grid-column: col3-start/col3-end;
+	}
+	.g{
+		grid-column: col1-start/col3-start;
+		grid-row: row3-start/row5-start;
+		background-color: red;
+	}
+	.h{
+		background-color: magenta;
+		grid-column: col1-start/col3-end;
+	}
+	
+	
+	
+/******************************/
+</style>
+</head>
+
+<body>
+	
+	
+<div class="wrapper">
+  <div class="box a">A</div>
+  <div class="box b">B</div>
+  <div class="box c">C</div>
+  <div class="box d">D</div>
+  <div class="box e">E</div>
+  <div class="box f">F</div>
+  <div class="box g">G</div>
+  <div class="box h">H</div>
+</div>
+	
+</body>
+</html>

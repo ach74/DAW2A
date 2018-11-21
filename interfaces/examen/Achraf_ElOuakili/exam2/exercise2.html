@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+	<title>Example</title>
+	<style>
+	.container { 
+		background-color: blue;
+		width:600px;
+		height:280px;
+		display: flex;
+	}
+
+	.container div {
+		color: white;
+		background-color:grey;
+		font-size: 30px;
+		text-align: center;
+		line-height: 20px; 
+		height:20px;
+		padding: 30px 40px;
+		margin:2px;
+		width:50px;
+	}
+	
+	/********* ADD YOUR CODE FROM HERE **********/
+	.container{
+		flex-wrap: wrap-reverse;
+	}
+	.container>div:nth-child(1){
+		order: 2;
+		color: red;
+		flex-grow: 8;
+	}
+	.container>div:nth-child(3){
+		order: -1;
+		color: red;
+		align-self: flex-end;
+	}
+
+
+	/********** END OF YOUR CODE ************/
+	
+</style>
+</head>
+<body>
+	<div class="container c1"><div>1</div><div>2</div><div>3</div></div>	
+</body>
+</html>
