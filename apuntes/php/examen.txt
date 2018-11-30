@@ -1,0 +1,57 @@
+﻿Herramientas:
+
+IDE
+
+Control de versiones
+
+Debuger
+
+
+Resaltado de texto. Muestra con distinto color o tipo de letra los diferentes elementos del lenguaje: sentencias, variables, comentarios, etc. También genera indentado automático para diferenciar de forma clara los distintos bloques de un programa.
+
+Completado automático. Detecta qué estás escribiendo y cuando es posible te muestra distintas opciones para completar el texto.
+
+Navegación en el código. Permite buscar de forma sencilla elementos dentro del texto, por ejemplo, definiciones de variables.
+
+Comprobación de errores al editar. Reconoce la sintaxis del lenguaje y revisa el código en busca de errores mientras lo escribes.
+
+Generación automática de código. Ciertas estructuras, como la que se utiliza para las clases, se repiten varias veces en un programa. La generación automática de código puede encargarse de crear la estructura básica, para que sólo tengas que rellenarla.
+
+Ejecución y depuración. Esta característica es una de las más útiles. El IDE se puede encargar de ejecutar un programa para poder probar su funcionamiento. Además, cuando algo no funciona, te permite depurarlo con herramientas como la ejecución paso a paso, el establecimiento de puntos de ruptura o la inspección del valor que almacenan las variables.
+
+Gestión de versiones. En conjunción con un sistema de control de versiones, el entorno de desarrollo te puede ayudar a guardar copias del estado del proyecto a lo largo del tiempo, para que si es necesario puedas revertir los cambios realizados.
+
+/********************************************************************************************************/
+Ambitos de una variable PHP:
+-Globales son todas lavariables que vas a utilizar dentro de una funcion.
+-Staticas
+-Superglobales la puedes llamar desde cualquier parte de una funcion.
+-Locales
+
+/********************************************************************************************************/
+
+Componentes de una cookies
+
+
+/********************************************************************************************************/
+
+Algoritmoica
+
+Solo hacer una funcion
+
+
+
+
+Algoritmica
+
+$i=null;
+for(;$i<5;){
+	echo "Value $i";
+	$i++;
+}
+
+
+for(;$i<5;$i++){
+	echo "Value $i";
+}
+

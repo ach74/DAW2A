@@ -1,0 +1,7 @@
+una clase final no puede ser generada ni sobre escrita, si el hijo quiere generar una clase con el mismo nombre. Le dara error.
+
+Probar:
+
+Crear un metodo final , y probar a llamarlo desde la clase hijo para usar la y tambien probar a crear una clase con el mismo nombre.
+
+
