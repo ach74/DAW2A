@@ -111,13 +111,14 @@ window.onload = function(){
 				var enemigo = enemigos[j];
 				if (impactoEnemigo(disparo,enemigo)) {
 					enemigo.estado="golpeado";
-					enemigo.contador=0;
+
+					//enemigo.contador=0;
 				}
 			}
 		}
 		for (var i in disparosEnemigos){
 			var disparo = disparosEnemigos[i];
-			if (impactoEnemigo(disparo,nave)) {
+			if (impactoEnemigo(nave,disparo)) {
 				nave.estado = "golpeada";
 			}
 		}
@@ -126,9 +127,6 @@ window.onload = function(){
 	function pintarTexto(){
 		if (textoJuego.count == -1) return;
 		var apl = textoJuego.count/50.0;
-		/*if (apl>1) {
-
-		}*/
 		ctx.save();
 		ctx.globalAlpha = apl;
 		
@@ -200,23 +198,25 @@ window.onload = function(){
 	function impactoEnemigo(a,b){
 		var impactoEnemigo = false;
 		//Coliciones
+		
 		if (b.x + b.width >= a.x && b.x < a.x + a.width) {
 			if (b.y + b.height >= a.y && b.y < a.y + a.height) {
 				impactoEnemigo = true;
 			}
 		}
-
+		/*
 		if (b.x <= a.x && b.x + b.width >= a.x + a.width) {
 			if (b.y <= a.y && b.x + b.height >= a.y + a.height) {
 				impactoEnemigo = true;
 			}
 		}
-
+		
 		if (a.x <= b.x && a.x + a.width >= b.x + b.width) {
 			if (a.y <= b.y && a.x + a.height >= b.y + b.height) {
 				impactoEnemigo = true;
 			}
 		}
+		*/
 		return impactoEnemigo;
 	}
 
@@ -233,7 +233,12 @@ window.onload = function(){
 	function moverDisparosEnemigos(){
 		for(var i in disparosEnemigos){
 			var disparo = disparosEnemigos[i];
-			disparo.y += nave.nivel;
+			if (nave.nivel%2==0) {
+				disparo.y += nave.nivel;
+			}else{
+
+			}
+			
 		}
 		disparosEnemigos =disparosEnemigos.filter(function(disparo){
 			return disparo.y < canvas.height;
@@ -261,7 +266,7 @@ window.onload = function(){
 					width: 30,
 					estado : "vivo",
 					contador : 0,
-					velocidad : 0.9,
+					velocidad : 9,
 					direccion : true
 				});
 
@@ -278,18 +283,18 @@ window.onload = function(){
 				enemigo.contador++;
 				//enemigo.x += Math.sin(enemigo.contador * Math.E / 90)*3.8;
 				
-				if (enemigos[enemigos.length-1].x==canvas.width-25) {
+				if (enemigos[enemigos.length-1].x>=canvas.width-25) {
 					enemigo.direccion=false;
 					enemigo.y+=30;
-				}else if (enemigos[0].x==0) {
+				}else if (enemigos[0].x<=0) {
 					enemigo.direccion=true;
 					enemigo.y+=30;
 				}
 				if (enemigo.direccion==true){
-					enemigo.x++;
+					enemigo.x=enemigo.x+enemigo.velocidad;
 				}
 				if (enemigo.direccion==false){
-					enemigo.x--;
+					enemigo.x=enemigo.x-enemigo.velocidad;
 				}
 
 				if (aletorio(0,enemigos.length*10)==4) {
@@ -388,7 +393,7 @@ window.onload = function(){
 		disparos.push({
 			x:nave.x + 20,
 			y:nave.y -10,
-			width: 2,
+			width: 3,
 			height:5
 		});
 	}
