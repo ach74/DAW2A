@@ -1,0 +1,80 @@
+body{
+	background-color: grey;
+}
+
+#container{
+	width: 350px;
+	border-radius: 5px;
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	padding: 30px;
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+}
+
+#container2{
+	margin-top: 15px;
+	width: 350px;
+	border-radius: 5px;
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	padding: 30px;
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+}
+.a{
+	margin: auto;
+	margin-top: 15px;
+}
+
+.google{
+	margin-top: 15px;
+	background-color: white;
+	border: 1px solid grey;
+	height: 40px;
+	border-radius: 5px;
+	color: grey;
+}
+.fa-google{
+	color: red;
+}
+.fb{
+	margin-top: 15px;
+	background-color: #395697;
+	border: 1px solid;
+	height: 40px;
+	border-radius: 5px;
+	color: white;
+}
+label{
+	margin-top: 15px;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 15px;
+}
+input{
+	height: 25px;
+	border: 1px solid grey;
+}
+.email{
+	color: grey;
+}
+.b{
+	text-align: right;
+	color: grey;
+	font-size: 12px;
+}
+.login{
+	height: 40px;
+	width: 80px;
+	border-radius: 5px;
+	background-color: #0095ff;
+	border: none;
+	box-shadow: all;
+}
