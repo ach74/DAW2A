@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Exercio 06</title>
 	<link rel="stylesheet" type="text/css" href="css/css.css">
-	 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<script type="text/javascript" src="js/js.js"></script>
 </head>
 <body>
 	<div id="container">
@@ -17,11 +19,11 @@
 		<label class="radio">
 			<input class="mt-0" type="radio" name="contactFormOptions" id="contactFormRadio2" value="option2"> Post-departure
 		</label>
-		<form action="dummy.php" method="post" id="containerForm">
+		<form action="" method="post" id="containerForm" onsubmit="return valida(this)">
 			<div class="inputFake a">
-				<label class="issueText">Issue</label>
+				<label class="issueText" for="optionSelect">Issue</label>
 				<div class="select">
-					<select name="optionSelect" id="optionSelect" required>
+					<select name="optionSelect" id="optionSelect" required >
 						<option selected="selected" value="" class="grisMedio">[Choose an option ...]</option>
 						<option value="1">Queries or concerns</option>
 						<option value="2">Pre-departure</option>
@@ -32,29 +34,27 @@
 			</div>
 
 			<div class="inputFake b">
-				<label class="issueText">Issue</label>
-				<input type="text" class="inputText" maxlength="30" required />
+				<label  for="inputText-B" class="issueText">Issue</label>
+				<input type="text" class="inputText" maxlength="30" id="inputText-B" oninvalid="setCustomValidity('Mandatory field');" required=""/>
 			</div>
-
-
 			<div class="inputFake c">
-				<label class="issueText fname">Firt name</label>
-				<input type="text" class="inputText" maxlength="30" required />
+				<label for="inputText-C" class="issueText fname">Firt name</label>
+				<input type="text" class="inputText" maxlength="30" id="inputText-C" oninvalid="setCustomValidity('Mandatory field');" required="asasas" />
 			</div>
 
 			<div class="inputFake d">
-				<label class="issueText sname">Surname</label>
-				<input type="text" class="inputText" maxlength="30" required />
+				<label for="inputText-D" class="issueText sname">Surname</label>
+				<input type="text" class="inputText" maxlength="30" id="inputText-D"  oninvalid="setCustomValidity('Mandatory field');" required=""/>
 			</div>
 
 			<div class="inputFake e">
-				<label class="issueText fname">E-mail</label>
-				<input type="email" class="inputText" maxlength="30" required />
+				<label for="inputText-E" class="issueText fname">E-mail</label>
+				<input type="email" class="inputText" maxlength="30" id="inputText-E" oninvalid="setCustomValidity('Mandatory field');" required=""/>
 			</div>
 
 			<div class="inputFake f">
-				<label class="issueText sname">Phone number</label>
-				<input type="tel" class="inputText" maxlength="9" required />
+				<label for="inputText-F" class="issueText sname">Phone number</label>
+				<input type="tel" class="inputText" maxlength="9" id="inputText-F" oninvalid="setCustomValidity('Mandatory field');" required=""/>
 			</div>
 
 			<div class="g">
@@ -62,7 +62,7 @@
 			</div>
 
 			<div class="button">
-				<button type="submit" class="b01">Send</button>
+				<button type="submit" class="b01" >Send</button>
 			</div>
 		</form>
 	</div>
