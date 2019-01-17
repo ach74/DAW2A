@@ -1,7 +1,12 @@
+.container > .text-center > a:link{
+  text-decoration:none;
+} 
+.container > .text-center > a{
+  color: black;
+} 
 .navbar .dropdown-menu div[class*="col"] {
  margin-bottom:1rem;
 }
-
 .navbar .dropdown-menu {
   border:none;
   background-color:#f8f9fa! important;
@@ -16,27 +21,55 @@
   box-shadow:none;
 }
 h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
-
+.form-inline .form-control {
+  width: 168px;
+}
 .card-img{
   border-radius: 0;
 }
-
-.filtroC > .btn{
+.filtroC > .btn,.filtroC > .btn:focus{
   border:1px solid black;
   border-radius: 0;
+  outline: 0;
+  box-shadow: none;
 }
 
-.filtroC > .btn:hover{
+.filtroC > .btn:hover,.filtroC > .btn-activado{
   background-color: black;
   color: white;
 }
-.filtroP> span:first-child {
-  float: left;
+.filtroP > .dropdown > .btn,.filtroT > .dropdown > .btn{
+  border: 1px solid white;
+  border-radius: 0;
+  border-bottom: 1px solid black;
+}
+.filtroP > .dropdown > .dropdown-menu,.filtroT > .dropdown > .dropdown-menu{
+  border-radius: 0;
+  border:1px solid white;
 }
 
-.filtroP> span:last-child {
-  float: right;
+.filtroP > .dropdown > .btn:focus,.filtroT > .dropdown > .btn:focus {
+  outline: 0;
+  box-shadow: none;
 }
+
+.filtroB > .btn,.filtroB >.btn:focus { 
+  border: 1px solid black;
+  border-radius: 0;
+  outline: 0;
+  box-shadow: none;
+}
+.filtroB > .btn:hover{
+  color: white;
+  background-color: black;
+}
+.filtroB > .btn:first-child:hover{
+  color: white;
+  background-color: #ff7e7e;
+}
+
+
+
 @media screen and (max-width:548px){
   .product-grid2{margin-bottom:30px}
   .carouser-text-1{
@@ -63,7 +96,7 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 991px) {
   .carouser-text-1{
     font-size: 4.5rem;
     text-align: right;
