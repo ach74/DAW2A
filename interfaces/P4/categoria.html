@@ -17,8 +17,9 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">ShopWear</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button onclick="myFunction()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fas fa-bars" id="menu-icon"></span>
+            <span class="fas fa-times" id="menu-icon-cerrar"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -66,7 +67,7 @@
                             </div>
                         </div>
                     </div>
-                
+
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link nav-item nav-link text-uppercase text-danger" href="categoria.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Rebajas</a>
@@ -252,21 +253,13 @@
                         </div>
                     </div>
                 </li>
-
-
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2 search" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-darck my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                <a class="btn text-uppercase iconoUser" href="index.html"><i class="fas fa-user"></i></a>
+                <a class="btn text-uppercase iconoBuy" href="index.html"><i class="fas fa-shopping-cart"></i></a>
             </form>
-            <ul class="navbar-nav mr-2">
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#"><i class="fas fa-user"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#"><i class="fas fa-shopping-cart"></i></a>
-                </li>
-            </ul>
         </div>
     </nav>
     <div class="container-fluid">

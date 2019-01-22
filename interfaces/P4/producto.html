@@ -17,8 +17,9 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">ShopWear</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button onclick="myFunction()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fas fa-bars" id="menu-icon"></span>
+            <span class="fas fa-times" id="menu-icon-cerrar"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -66,7 +67,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link nav-item nav-link text-uppercase text-danger" href="categoria.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Rebajas</a>
@@ -252,99 +253,149 @@
                         </div>
                     </div>
                 </li>
-
-
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2 search" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-darck my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                <a class="btn text-uppercase iconoUser" href="index.html"><i class="fas fa-user"></i></a>
+                <a class="btn text-uppercase iconoBuy" href="index.html"><i class="fas fa-shopping-cart"></i></a>
             </form>
-            <ul class="navbar-nav mr-2">
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#"><i class="fas fa-user"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#"><i class="fas fa-shopping-cart"></i></a>
-                </li>
-            </ul>
         </div>
     </nav>
     <div class="container-fluid">
         <div class="container">
             <h3 class="h3 text-uppercase">moda de mujer</h3>
             <p class="text-center">Actualiza tu estilo con las últimas tendencias de la temporada para ella.</p>
-            <p class="text-center"><a href="index.html">Home</a> › <a href="categoria.html">Mujer</a> › <a href="subCategoria.html">Jerséi</a></p>
+            <p class="text-center"><a href="index.html">Home</a> › <a href="categoria.html">Mujer</a> › <a href="subCategoria.html">Jerséi</a> › <a href="producto.html">Producto</a></p>
             <div class="row mt-5">
-                <div class="col-sm-6 col-md-6">
-                    <div class="product-grid2 card cardCatalogo">
-                        <div class="product-image2">
-                            <a href="#">
-                                <img class="pic-1" src="img/newColection27.jpg">
-                                <img class="pic-2" src="img/newColection28.jpg">
-                            </a>
+                <div class="col-sm-6 col-md-6 containerCarousel">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                      <!-- Indicators -->
+                      <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                        <li data-target="#demo" data-slide-to="3"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner productoCarousel">
+                        <div class="carousel-item active">
+                            <img src="img/newColection27.jpg" alt="Img 01">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/newColection28.jpg" alt="Img 02">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/newColection31.jpg" alt="Img 03">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/newColection32.jpg" alt="Img 03">
                         </div>
                     </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
                 </div>
-                <div class="col-sm-6 col-md-6">
-                    <h3 class="text-sm-right">Jersey lentejuelas multicolor </h3>
-                    <p class="text-sm-right text-secondary">Jersey de manga larga, con cuello redondo, con detalle de lentejuelas multicolor en los hombros. </p>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="row">
+                    <div class="col-sm-6 col-md-8">                   
+                        <h4 class="text-sm-left">Jersey lentejuelas multicolor </h4>
+                    </div>
+                    <div class="col-sm-6 col-md-4 text-sm-right">
+                        <h3 class="text-danger ">19,99 €</h3>
+                        <p><strike> 32,99 €</strike></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <p class="text-sm-left text-secondary">Jersey de manga larga, con cuello redondo, con detalle de lentejuelas multicolor en los hombros. </p>
+                    </div>
+                    <div class="col-sm-12 col-md-12">
+                        <p class="text-sm-left text-secondary border-bottom "> Ref. 1335308 </p>
+                    </div>
+                    <div class="col-sm-12 col-md-12">
+                        <p class="text-sm-left text-secondary"> Seleccionar color :</p>
+                        <a href="#">
+                            <img src="img/color.jpg" alt="..." class="rounded-0 border border-dark imgColorProducto">
+                        </a>
+                        <p class="text-sm-left text-secondary mt-4"> Seleccionar talla :</p>
+                        <ul class="list-inline tallas">
+                            <li class="list-inline-item"><a class="btn border border-dark rounded-0 mt-2" href="#">XS</a></li>
+                            <li class="list-inline-item"><a class="btn border border-dark rounded-0 mt-2" href="#">S</a></li>
+                            <li class="list-inline-item"><a class="btn border border-dark rounded-0 mt-2" href="#">M</a></li>
+                            <li class="list-inline-item"><a class="btn border border-dark rounded-0 mt-2" href="#">L</a></li>
+                            <li class="list-inline-item"><a class="btn border border-dark rounded-0 mt-2" href="#">XL</a></li>
+                        </ul>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-secondary rounded-0 my-3 text-uppercase border-dark">Añadir a la bolsa</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer class="section footer-classic context-dark mt-5 pt-3">
-        <div class="container">
-            <div class="row row-30">
-                <div class="col-md-4 col-xl-5">
-                    <h5 class="text-uppercase">help</h5>
-                    <ul class="nav-list footer-ul">
-                        <li><a href="#">Atención al Cliente</a></li>
-                        <li><a href="#">Preguntas frecuentes</a></li>
-                        <li><a href="#">Envío</a></li>
-                        <li><a href="#">Cambios, devoluciones y desistimiento</a></li>
-                        <li><a href="#">Promociones vigentes</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Contacts</h5>
-                    <dl class="contact-list">
-                        <dt>Address:</dt>
-                        <dd>798 South Park Avenue, Jaipur, Raj</dd>
-                    </dl>
-                    <dl class="contact-list">
-                        <dt>email:</dt>
-                        <dd><a href="mailto:#">admin@gmail.com</a></dd>
-                    </dl>
-                    <dl class="contact-list">
-                        <dt>phones:</dt>
-                        <dd><a href="tel:#">+91 7568543012</a> <span>or</span> <a href="tel:#">+91 9571195353</a>
-                        </dd>
-                    </dl>
-                </div>
-                <div class="col-md-4 col-xl-3">
-                    <h5 class="text-uppercase">info</h5>
-                    <ul class="nav-list footer-ul">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contacts</a></li>
-                        <li><a href="#">Pricing</a></li>
-                    </ul>
-                </div>
+</div>
+<footer class="section footer-classic context-dark mt-5 pt-3">
+    <div class="container">
+        <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+                <h5 class="text-uppercase">help</h5>
+                <ul class="nav-list footer-ul">
+                    <li><a href="#">Atención al Cliente</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Envío</a></li>
+                    <li><a href="#">Cambios, devoluciones y desistimiento</a></li>
+                    <li><a href="#">Promociones vigentes</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contacts</h5>
+                <dl class="contact-list">
+                    <dt>Address:</dt>
+                    <dd>798 South Park Avenue, Jaipur, Raj</dd>
+                </dl>
+                <dl class="contact-list">
+                    <dt>email:</dt>
+                    <dd><a href="mailto:#">admin@gmail.com</a></dd>
+                </dl>
+                <dl class="contact-list">
+                    <dt>phones:</dt>
+                    <dd><a href="tel:#">+91 7568543012</a> <span>or</span> <a href="tel:#">+91 9571195353</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-md-4 col-xl-3">
+                <h5 class="text-uppercase">info</h5>
+                <ul class="nav-list footer-ul">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
             </div>
         </div>
-        <div class="row no-gutters">
-            <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
-            <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
-            <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
-            <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
-        </div>
-    </footer>
+    </div>
+    <div class="row no-gutters">
+        <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+        <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+        <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+        <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+    </div>
+</footer>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 
 </html>
