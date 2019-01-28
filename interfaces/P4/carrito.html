@@ -259,125 +259,88 @@
             </form>
         </div>
     </nav>
-    <div class="container-fluid d-flex justify-content-center">
-        <form class="m-5" id="login">
-            <div class="form-row border rounded p-2 mb-5">
-                <div class="col-md-12 mt-2 text-center display-1">
-                    <p class="fas fa-user-circle"></p>
-                </div>
-                <div class="col-md-12 mt-2 text-center display-4">
-                    <p>Login:</p>
-                </div>
-                <div class="col-md-12 mt-2">
-                    <input type="text" class="form-control" id="validationDefault01" placeholder="User" value="" required>
-                </div>
+    <div class="d-flex justify-content-center">
+        <div class="container carrito mt-5">
+          <h2 class="text-uppercase">shopping cart</h2>         
+          <table class="table table-striped border rounded">
+            <thead>
+                <tr>
+                    <th class="align-middle text-center border-0">Product</th>
+                    <th class="align-middle text-center border-0">Quantity</th>
+                    <th class="align-middle text-center border-0">Price</th>
+                    <th class="align-middle text-center border-0">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row" class="align-middle border-0"><img src="img/newColection28.jpg" class="rounded "> Jersey </td>
+                    <td class="align-middle text-center border-0"><span class="mx-2">1</span></td>
+                    <td class="align-middle text-center border-0">19,99€</td>
+                    <td class="align-middle text-center border-0"><a class="btn btn-outline-danger" href="#">Remove</a><a class="btn btn-outline-secondary m-1" href="#">Add</a></td>
+                </tr>
+                <tr>
+                    <td scope="row" class="align-middle text-left  border-0"><img src="img/newColection16.jpg" class="rounded "> Chaqueta</td>
+                    <td class="align-middle text-center border-0"><span class="mx-2">1</span></td>
+                    <td class="align-middle text-center border-0">14,99€</td>
+                    <td class="align-middle text-center border-0"><a class="btn btn-outline-danger" href="#">Remove</a><a class="btn btn-outline-secondary m-1" href="#">Add</a></td>
+                </tr>
+                <tr>
+                    <td scope="row" class="align-middle text-left border-0"><img src="img/newColection10.jpg" class="rounded"> Jersey </td>
+                    <td class="align-middle text-center border-0"><span class="mx-2">1</span></td>
+                    <td class="align-middle text-center border-0">10,99€</td>
+                    <td class="align-middle text-center border-0"><a class="btn btn-outline-danger" href="#">Remove</a><a class="btn btn-outline-secondary m-1" href="#">Add</a></td>
+                </tr>
 
-                <div class="col-md-12 mt-2">
-                    <input type="password" class="form-control" id="validationDefault01" placeholder="Password" value="" required>
-                </div>
-
-                <div class="form-check col-md-12 ml-4 mt-3">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Remember me</label>
-                </div>
-
-                <div class="col-md-6 mt-2">
-                    <button type="button" onclick="log()" class="btn btn-block btn-dark">Login</button>
-                </div>
-
-                <div class="col-md-6 mt-2">
-                    <button type="button" onclick="log()" class="btn btn-block btn-dark">Register</button>
-                </div>
-            </div>
-        </form>
-
-        <form class="m-5" id="register">
-            <div class="card p-2">
-                <div class="col-md-12 mt-2 text-center display-1">
-                    <p class="fas fa-user-circle"></p>
-                </div>
-                <div class="col-md-12 mt-2 text-center display-4">
-                    <p>Register:</p>
-                </div>
-                <div class="row m-1">
-                    <div class="col-sm-6 mt-1">
-                        <input type="text" class="form-control" placeholder="First name">
-                    </div>
-                    <div class="col-sm-6 mt-1">
-                        <input type="text" class="form-control" placeholder="Last name">
-                    </div>
-                </div>
-                <div class="row m-1 mt-2 Username">
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text">@</div>
-                        </div>
-                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
-                    </div>
-                </div>
-
-                <div class="row m-1 mt-2">
-                    <div class="col">
-                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                    </div>
-                </div>
-
-                <div class="row m-1">
-                    <div class="col-sm-6 mt-1">
-                        <input type="password" class="form-control" placeholder="Password">
-                    </div>
-                    <div class="col-sm-6 mt-1">
-                        <input type="password" class="form-control" placeholder="Password">
-                    </div>
-                </div>
-
-
-                <div class="col text-center mt-2">
-                    <button type="button" onclick="reg()" class="btn btn-block btn-dark">Register</button>
-                </div>
-            </div>
-        </form>
+                <tr>
+                    <td scope="row" class="align-middle text-left border-0"></td>
+                    <td class="align-middle text-center border-0 text-uppercase font-weight-bold">Total :</td>
+                    <td class="align-middle text-center border-0 font-weight-bold">45,97€</td>
+                    <td class="align-middle text-center border-0"><a class="btn btn-outline-success" href="#">Pagar</a></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <footer class="section footer-classic context-dark mt-5 pt-3">
-        <div class="container">
-          <div class="row row-30">
-            <div class="col-md-4 col-xl-5">
-                <h5 class="text-uppercase">help</h5>
-                <ul class="nav-list footer-ul">
-                    <li><a href="#">Atención al Cliente</a></li>
-                    <li><a href="#">Preguntas frecuentes</a></li>
-                    <li><a href="#">Envío</a></li>
-                    <li><a href="#">Cambios, devoluciones y desistimiento</a></li>
-                    <li><a href="#">Promociones vigentes</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-              <h5>Contacts</h5>
-              <dl class="contact-list">
-                <dt>Address:</dt>
-                <dd>798 South Park Avenue, Jaipur, Raj</dd>
-            </dl>
-            <dl class="contact-list">
-                <dt>email:</dt>
-                <dd><a href="mailto:#">admin@gmail.com</a></dd>
-            </dl>
-            <dl class="contact-list">
-                <dt>phones:</dt>
-                <dd><a href="tel:#">+91 7568543012</a> <span>or</span> <a href="tel:#">+91 9571195353</a>
-                </dd>
-            </dl>
-        </div>
-        <div class="col-md-4 col-xl-3">
-            <h5 class="text-uppercase">info</h5>
+</div>
+<footer class="section footer-classic context-dark mt-5 pt-3">
+    <div class="container">
+      <div class="row row-30">
+        <div class="col-md-4 col-xl-5">
+            <h5 class="text-uppercase">help</h5>
             <ul class="nav-list footer-ul">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Atención al Cliente</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Envío</a></li>
+                <li><a href="#">Cambios, devoluciones y desistimiento</a></li>
+                <li><a href="#">Promociones vigentes</a></li>
             </ul>
         </div>
+        <div class="col-md-4">
+          <h5>Contacts</h5>
+          <dl class="contact-list">
+            <dt>Address:</dt>
+            <dd>798 South Park Avenue, Jaipur, Raj</dd>
+        </dl>
+        <dl class="contact-list">
+            <dt>email:</dt>
+            <dd><a href="mailto:#">admin@gmail.com</a></dd>
+        </dl>
+        <dl class="contact-list">
+            <dt>phones:</dt>
+            <dd><a href="tel:#">+91 7568543012</a> <span>or</span> <a href="tel:#">+91 9571195353</a>
+            </dd>
+        </dl>
     </div>
+    <div class="col-md-4 col-xl-3">
+        <h5 class="text-uppercase">info</h5>
+        <ul class="nav-list footer-ul">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Pricing</a></li>
+        </ul>
+    </div>
+</div>
 </div>
 <div class="row no-gutters">
   <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
@@ -410,7 +373,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row" class="align-middle text-center border-0"><img src="img/newColection28.jpg" class="img-thumbnail"></th>
+                        <td scope="row" class="align-middle text-center border-0"><img src="img/newColection28.jpg" class="img-thumbnail"></td>
                         <td class="align-middle text-center border-0">Jersey</td>
                         <td class="align-middle text-center border-0"><a class="btn btn-outline-dark" href="#"><i class="fas fa-plus"></i></a><span class="mx-2">1</span><a class="btn btn-outline-danger" href="#"><i class="fas fa-minus"></i></a></td>
                         <td class="align-middle text-center border-0">19,99€</td>

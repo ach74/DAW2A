@@ -93,6 +93,10 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
   footer{
     padding: 30px;
   }
+
+  .carrito{
+    padding: 0;
+  }
 }
 
 /************CSS tablet********************/
@@ -265,11 +269,28 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 }
 /*************** CSS Modal **************/
 
-.col > .img-thumbnail{
-  max-width: 100px;
+.border-0 > .img-thumbnail {
+  height: 90px;
+  max-width: 90px;
 }
 
-.table > tbody > tr > th > img {
-  width: 100px;
+/********** Login ******************/
+
+#login{
+  max-width: 450px;
+}
+#register{
+  display: none;
+}
+
+.Username > .input-group{
+  margin: 0 15px 0 15px;
+}
+
+
+/**************** CSS Carrito ********************/
+
+.border-0 > .rounded{
   height: 90px;
+  max-width: 90px;
 }
